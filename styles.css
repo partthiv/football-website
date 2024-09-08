@@ -2,72 +2,49 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px;
+   
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url('download.png') no-repeat center center fixed;
     background-size: cover;
-    color: #f4f4f9;
-}
+    color: #f4f4f9;display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 
-/* Center the heading and add some margin */
+}
 h1 {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    font-size: 34px;
 }
-
-/* Style for the input field */
-#playerName {
-    width: calc(100% - 140px); /* Full width minus the button's width */
-    max-width: 300px;
-    padding: 12px;
-    margin-right: 10px;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 1em;
-    transition: all 0.3s ease;
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-
-#playerName:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-}
-
-/* Style for the button */
-#fetchButton {
-    padding: 12px 25px;
-    background-color: #28a745;
-    color: #fff;
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-#fetchButton:hover {
-    background-color: #218838;
-    transform: translateY(-2px);
+button:hover {
+    background-color: #0056b3;
 }
-
-#fetchButton:focus {
-    outline: none;
-    box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
-}
-
-/* Style for the container displaying results */
 #dataContainer {
-    margin-top: 30px;
-    padding: 15px;
-    background-color: transparent; /* Set to transparent */
-    border: 1px solid transparent; /* Remove the border */
-    border-radius: 10px;
-    box-shadow: none; /* Remove the shadow */
+    margin-top: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+.validation {
+    color: red;
+    display: none;
+    margin-top: 10px;
 }
 
 /* Responsive design adjustments */
