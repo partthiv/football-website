@@ -3,18 +3,16 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
-
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url('download.png') no-repeat center center fixed;
     background-size: cover;
     color: #f4f4f9;
-}
-    color: #f4f4f9;display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+}
 
 /* Center the heading and add some margin */
 h1 {
@@ -36,21 +34,12 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 1em;
     transition: all 0.3s ease;
-h1 {
-    margin-bottom: 20px;
-    font-size: 34px;
 }
 
 #playerName:focus {
     border-color: #007bff;
     outline: none;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 /* Style for the button */
@@ -58,15 +47,10 @@ input[type="text"] {
     padding: 12px 25px;
     background-color: #28a745;
     color: #fff;
-button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
     border: none;
     border-radius: 30px;
-    border-radius: 4px;
-    cursor: pointer;
     font-size: 1em;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -79,22 +63,20 @@ button {
 #fetchButton:focus {
     outline: none;
     box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
-button:hover {
-    background-color: #0056b3;
 }
 
 /* Style for the container displaying results */
 #dataContainer {
     margin-top: 30px;
     padding: 15px;
-    background-color: transparent; /* Set to transparent */
-    border: 1px solid transparent; /* Remove the border */
+    background-color: transparent;
+    border: 1px solid transparent;
     border-radius: 10px;
-    box-shadow: none; /* Remove the shadow */
-    margin-top: 20px;
-    max-width: 400px;
+    box-shadow: none;
     text-align: center;
 }
+
+/* Validation message */
 .validation {
     color: red;
     display: none;
