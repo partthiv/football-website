@@ -1,7 +1,8 @@
 /* Global styling for a modern look */
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364), url('download.png') no-repeat center center fixed;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364), 
+                url('download.png') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
     margin: 0;
